@@ -1,0 +1,19 @@
+{
+  "name": "Cardano CLI Devcontainer",
+  "image": "ghcr.io/blinklabs-io/cardano-node:main",
+  "features": {
+    "docker-in-docker": "latest"
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspaces,type=bind"
+  ],
+  "postCreateCommand": "echo 'Container started'",
+  "runArgs": [
+    "--cap-add=SYS_NICE",
+    "--network=host"
+  ],
+  "containerEnv": {
+    "NETWORK": "preprod"
+  },
+  "shutdownAction": "none"
+}
