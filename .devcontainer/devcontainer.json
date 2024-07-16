@@ -2,17 +2,19 @@
   "name": "Cardano CLI Devcontainer",
   "image": "ghcr.io/blinklabs-io/cardano-node:main",
   "features": {
-    "docker-in-docker": "latest"
+    "docker-in-docker": "latest",
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3"
+    }
   },
   "mounts": [
     "source=${localWorkspaceFolder},target=/workspaces,type=bind"
-    
   ],
   "postCreateCommand": "echo 'Container started'",
-  "postAttachCommand":"nohup bash -c 'cardano-node run --config /opt/cardano/config/preprod/config.json --database-path /opt/cardano/config/preprod/db/ --socket-path /opt/cardano/config/preprod/db/node.socket --host-addr 127.0.0.1 --port 3001 --topology /opt/cardano/config/preprod/topology.json &'nohup bash -c 'cardano-node run --config /opt/cardano/config/preprod/config.json --database-path /opt/cardano/config/preprod/db/ --socket-path /opt/cardano/config/preprod/db/node.socket --host-addr 127.0.0.1 --port 3001 --topology /opt/cardano/config/preprod/topology.json &' >/dev/null 2>&1",
+  "postAttachCommand": "nohup bash -c 'cardano-node run --config /opt/cardano/config/preprod/config.json --database-path /opt/cardano/config/preprod/db/ --socket-path /opt/cardano/config/preprod/db/node.socket --host-addr 127.0.0.1 --port 3001 --topology /opt/cardano/config/preprod/topology.json &' nohup bash -c 'cardano-node run --config /opt/cardano/config/preprod/config.json --database-path /opt/cardano/config/preprod/db/ --socket-path /opt/cardano/config/preprod/db/node.socket --host-addr 127.0.0.1 --port 3001 --topology /opt/cardano/config/preprod/topology.json &' >/dev/null 2>&1",
   "runArgs": [
-    "--env","NETWORK=preprod",
-    "--publish","3001:3001",  
+    "--env", "NETWORK=preprod",
+    "--publish", "3001:3001",
     "--cap-add=SYS_NICE",
     "--network=host"
   ],
