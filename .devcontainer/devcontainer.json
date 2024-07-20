@@ -2,10 +2,7 @@
   "name": "Cardano CLI Devcontainer",
   "image": "ghcr.io/blinklabs-io/cardano-node:main",
   "features": {
-    "docker-in-docker": "latest",
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "3"
-    }
+    "docker-in-docker": "latest"
   },
   "mounts": [
     "source=${localWorkspaceFolder},target=/workspaces,type=bind"
