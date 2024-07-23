@@ -15,7 +15,8 @@
     "--network=host"
   ],
   "remoteEnv": {
-    "CARDANO_NODE_SOCKET_PATH": "/opt/cardano/config/preview/db/node.socket"
+    "CARDANO_NODE_SOCKET_PATH": "/opt/cardano/config/preview/db/node.socket",
+	"CARDANO_NODE_MAGIC":"2"
   },
   "shutdownAction": "none"
 }
