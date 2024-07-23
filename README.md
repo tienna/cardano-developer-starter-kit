@@ -6,7 +6,7 @@ This starter kit shows how to execute common operations against the Cardano bloc
 
 For running this starter kit you'll need access to a fully synced instance of a Cardano Node and the `cardano-cli` binary.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=828417760)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main)
 
 
 ## Navigating the Starter Kit
