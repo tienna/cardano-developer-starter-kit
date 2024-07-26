@@ -1,10 +1,10 @@
-# Cardano CLI Starter Kit
+# Hướng dẫn sử dụng Cardano CLI Starter Kit
 
-This starter kit shows how to execute common operations against the Cardano blockchain using the official command-line tool called `cardano-cli`.
+Bộ starter kit sẽ cho thấy cách thực hiện các hoạt động phổ biến trên blockchain Cardano bằng cách sử dụng các công cụ dòng lệnh với tên gọi `cardano-cli`.
 
-## Dev Environment
+## Tạo môi trường thực hành cho chính bạn
 
-For running this starter kit you'll need access to a fully synced instance of a Cardano Node and the `cardano-cli` binary.
+Để chạy starter kit bạn cần truy cập vào Cardano Node đã đồng bộ xong dữ liệu và chạy cậu lệnh `cardano-cli`.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=832600260)
 
