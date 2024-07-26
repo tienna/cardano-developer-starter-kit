@@ -24,22 +24,21 @@ Bất cứ khi nào bạn thấy một đoạn mã bash mẫu như một bước
 
 ### Truy cập Cardano Node
 
-Since you're running this starter kit from a _Cardano Workspace_, you already have access to the required infrastrcuture, such as the Cardano Node. All the required binaries are pre-installed by default, including the `cardano-cli`.
+Bởi vì bạn đang chạy starter kit trong môi trường _Cardano Workspace_, bạn đã có quyền truy cập vào cơ sở hạ tầng cần thiết để thực hành, chẳng hạn như Cardano Node. Tất cả các tệp nhị phân cần thiết đều được cài đặt sẵn theo mặc định, bao gồm cả `cardano-cli`.
 
-The network to which you're connected (mainnet, preview, preprod, etc) is defined by your project's configuration, selected at the moment of creating your environment.
+Môi trường bạn sẽ thực hành là Preview vì môi trường này có dung lượng thấp, tốc độ nhanh.
 
-To simplify the overall process, _Cardano Workspaces_ come already configured with specific environmental variables that allows you to connect to the node without extra step. These are the variables relevant for this particular tutorial:
+Để đơn giản hóa toàn bộ quá trình, _Cardano Workspaces_ đã được cấu hình sẵn với các biến môi trường cụ thể cho phép bạn kết nối với Cardano node mà không cần thêm bước thao tác nào khác. Đây là các biến có liên quan đến hướng dẫn cụ thể này:
 
 - `CARDANO_NODE_SOCKET_PATH`: provides the location of the unix socket within the workspace where the cardano node is listening to.
 - `CARDANO_NODE_MAGIC`: the network magic corresponding to the node that is connected to the workspace.
 
-To ensure that you're connected to the node, try running the following command which outputs the current tip of the node:
+Để đảm bảo rằng bạn đã kết nối với nút, hãy thử chạy lệnh sau để đưa ra đầu hiện tại của nút:
 
 ```sh
 cardano-cli query tip --testnet-magic $CARDANO_NODE_MAGIC
 ```
-
-if everything worked correctly, you should see an output similar to this one:
+nếu mọi thứ hoạt động bình thường, bạn sẽ thấy kết quả tương tự như thế này:
 
 ```json
 {
@@ -52,18 +51,17 @@ if everything worked correctly, you should see an output similar to this one:
 }
 ```
 
-## Table of Contents
+## Danh mục các bài Lab
 
 The following list describes the different parts of the tutorial. We recommend following them in order since each one provides instructions and resources that might be required to execute later steps.
 
-### 1. [Account Management](./01-account-management.md)
+### 1. [Quản lý tài khoản](./01-account-management.md)
 
-Explains how to create signing keys and addresses that represent your account while interacting with the blockchain.
+Bài lab sẽ giải thích cách tạo khóa ký và địa chỉ đại diện cho tài khoản của bạn khi tương tác với blockchain.
 
-### 2. [Build Transactions](./02-build-transactions.md)
+### 2. [Thực hiện giao dịch](./02-build-transactions.md)
+Bài lab sẽ giải thích cách xây dựng giao dịch chuyển tiền ADA đơn giản và gửi nó lên blockchain.
 
-Explains how to build a simple ADA transfer transaction and submit it onto the blockhain.
+### 3. [Tạo Native Assets](./01-mint-native-assets.md)
 
-### 3. [Mint Native Assets](./01-mint-native-assets.md)
-
-Explains how to mint custom native assets and transfer those assets to other addresses.
+Bài lab sẽ giải thích cách đúc tài sản gốc tùy chỉnh và chuyển những tài sản đó sang các địa chỉ khác.
