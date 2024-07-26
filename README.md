@@ -4,7 +4,7 @@ Bộ starter kit sẽ cho thấy cách thực hiện các hoạt động phổ b
 
 ## Tạo môi trường thực hành cho chính bạn
 
-Bạn cần tạo ra một Cardano Node đã đồng bộ xong dữ liệu bằng cách click vào nút "Tạo Cardano node trên Codespaces: bên dưới đây  👇👇👇
+Bạn cần tạo ra một Cardano Node đã đồng bộ xong dữ liệu bằng cách click vào nút "Open in Github Codespaces: bên dưới đây  👇👇👇
 
 [![Tạo Cardano node trên Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=832600260)
 
