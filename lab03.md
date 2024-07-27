@@ -1,4 +1,4 @@
-#Khôi phục ví từ cụm từ ghi nhớ
+# Khôi phục ví từ cụm từ ghi nhớ
 
 Điều kiện tiên quyết
 Quy trình này yêu cầu cardano-wallet và cardano-cli .
@@ -7,7 +7,7 @@ Quy trình này yêu cầu cardano-wallet và cardano-cli .
 
 Navigating the HD wallet tree structure
 
-![]([img/Cardano-Wallet.png](https://www.cardano2vn.io/assets/images/Cardano-Wallet-eb0b6d22232d2b14afd713cd546c82ba.png)
+![](https://www.cardano2vn.io/assets/images/Cardano-Wallet-eb0b6d22232d2b14afd713cd546c82ba.png)
 
 
 ## Tạo cụm từ bí mật
