@@ -1,6 +1,7 @@
 # Tương tác với Blockchain Cardano bằng CLI 
 
 **Cài thêm các phụ thuộc**
+
 apt update -y
 
 apt install nano
