@@ -89,7 +89,7 @@ cardano-cli key verification-key --signing-key-file $BASENAME.stake.skey \
 Mỗi địa chỉ thanh toán được tính từ khóa thanh toán tương ứng:
 
 ```
-cardano-cli address build --testnet-magic 1 \
+cardano-cli address build --testnet-magic 2 \
                           --payment-verification-key $(cat $BASENAME.payment-0.pub) \
                           --stake-verification-key $(cat $BASENAME.stake.pub) \
                           --out-file $BASENAME.payment-0.addr
@@ -100,7 +100,7 @@ Các địa chỉ này phải khớp với địa chỉ của ví ban đầu.
 ## B7. Tạo địa chỉ ví cổ phần:
 
 ```
-cardano-cli stake-address build --testnet-magic 1 \
+cardano-cli stake-address build --testnet-magic 2 \
                                 --stake-verification-key-file $BASENAME.stake.pub \
                                 --out-file $BASENAME.stake.addr
                                 
@@ -108,6 +108,6 @@ cardano-cli stake-address build --testnet-magic 1 \
 ## B8 Đọc UTxO trên ví
 
 ```
-cardano-cli query utxo --address $(cat $BASENAME.payment-0.addr) --testnet-magic 1
+cardano-cli query utxo --address $(cat $BASENAME.payment-0.addr) --testnet-magic 2
 ```
 
