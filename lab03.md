@@ -158,7 +158,7 @@ Thực hiện một giao dịch luôn yêu cầu bạn trả phí. Việc gửi 
 Vì vậy, hãy đảm bảo rằng địa chỉ bạn sẽ sử dụng làm đầu vào cho giao dịch đúc tiền luôn có đủ tiền.
 
 
-Trên mạng **thử nghiệm - testnet**, bạn có thể yêu cầu cấp tiền từ [testnet faucet](../integrate-cardano/testnet-faucet).
+Trên mạng **thử nghiệm - testnet**, bạn có thể yêu cầu cấp tiền từ [testnet faucet](https://docs.cardano.org/cardano-testnets/tools/faucet/).
 
 ### Export protocol parameters
 
