@@ -476,7 +476,7 @@ Hàm băm của địa chỉ mà chúng ta sử dụng làm đầu vào cho giao
 
 Đây là phần đầu ra quan trọng. Đối với <i>--tx-out</i> , chúng ta cần chỉ định địa chỉ nào sẽ nhận giao dịch của này. Trong trường hợp của chúng ta, chúng ta gửi mã thông báo đến địa chỉ của chúng ta.
 
-1. ịa chỉ
+1. Địa chỉ
 2. Dấu cộng +
 3. Đầu ra tính bằng Lovelace (ada)
 4. Dấu cộng +
@@ -502,11 +502,6 @@ Một lần nữa, cú pháp tương tự như được chỉ định như trong
 ```
 
 Đậy là phần còn lại ADA của UTxO gửi lại đỉa chỉ ký.
-
-```bash
---protocol-params-file protocol.json \
-```
-Đây là file cấu hình để tạo giao dịch nó lấy các thông số của mạng
 
 ```bash
 --out-file mint-native-assets.raw
