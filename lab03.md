@@ -2,7 +2,9 @@
 
 **Cài thêm các phụ thuộc**
 apt update -y
+
 apt install nano
+
 apt install vim
 
 ## I. Khôi phục ví từ cụm từ ghi nhớ
