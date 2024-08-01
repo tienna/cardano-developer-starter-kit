@@ -3,7 +3,8 @@
 - [ ] Chuyển đổi cụm từ ghi nhớ sang private key
 - [ ] Kiểm tra node đã đồng bộ 100% chưa?
 - [ ] Tìm số dư của ví= đọc UTxO trên ví
-- [ ] 
+- [ ] Cấp tiền cho địa chỉ
+- [ ] Export protocol parameters--> phục vụ cho các bài lab sau
 
 
 ## I. Khôi phục ví từ cụm từ ghi nhớ
@@ -165,3 +166,5 @@ Trên mạng **thử nghiệm - testnet**, bạn có thể yêu cầu cấp ti�
 ```bash
 cardano-cli query protocol-parameters $testnet --out-file protocol.json
 ```
+
+Chúc mừng, Bạn đã hoàn thành Lab1
