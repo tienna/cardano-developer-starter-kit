@@ -65,7 +65,7 @@ cardano-cli transaction submit $testnet \
 --tx-file simple-tx.signed
 ```
  
-bạn sẽ nhìn thầy dòng chữ 
+bạn sẽ nhìn thấy dòng chữ 
 
 **Transaction successfully submitted.**
 
