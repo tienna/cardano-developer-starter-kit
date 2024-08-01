@@ -6,9 +6,12 @@
 
 ## Tạo giao dịch chuyển tADA từ ví của mình sang ví khác
 
-### Thiết lập các biến môi trường để thuận thiện cho việc giao dịch
+### Thiết lập các biến môi trường để thuận thiện cho việc soạn thảo
+
+⚠️ **Thay địa chỉ BOB_ADDR= địa chỉ bạn muốn gửi đến** 
 
 ```bash
+testnet="--testnet-magic 2"
 address=$(cat $BASENAME.payment-0.addr)
 address_SKEY="$BASENAME.payment-0.skey"
 BOB_ADDR="addr_test1qz8shh6wqssr83hurdmqx44js8v7tglg9lm3xh89auw007dd38kf3ymx9c2w225uc7yjmplr794wvc96n5lsy0wsm8fq9n5epq"
