@@ -30,7 +30,7 @@ Nhập cụm mật khẩu 15 từ  hoặc cụm 24 từ (ví Shelley trên Daeda
 ### B1. Tạo file gồm 24 ký tự
 
 ```
-nano recovery-phrase.prv
+code recovery-phrase.prv
 
 ```
 
