@@ -72,7 +72,7 @@ bạn sẽ nhìn thầy dòng chữ
 → điều này có nghĩa Thông báo giao dịch đã được thực hiện thành công
 
 
-### Kiểm tra số dư từ ví của bạn
+### B4. Kiểm tra số dư từ ví của bạn
 
 ```bash
 cardano-cli query utxo $testnet --address $address
