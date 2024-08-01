@@ -53,15 +53,19 @@ nếu mọi thứ hoạt động bình thường, bạn sẽ thấy kết quả 
 
 ## Danh mục các bài Lab
 
-The following list describes the different parts of the tutorial. We recommend following them in order since each one provides instructions and resources that might be required to execute later steps.
+Đây là các bài lab căn bản giúp bạn làm quen với Cardano trong việc tạo giao dịch, tạo token và tạo NFT
 
-### 1. [Quản lý tài khoản](./01-account-management.md)
+### 1. [Quản lý tài khoản](./Lab01.md)
 
 Bài lab sẽ giải thích cách tạo khóa ký và địa chỉ đại diện cho tài khoản của bạn khi tương tác với blockchain.
 
-### 2. [Thực hiện giao dịch](./02-build-transactions.md)
+### 2. [Thực hiện giao dịch](./lab02.md)
 Bài lab sẽ giải thích cách xây dựng giao dịch chuyển tiền ADA đơn giản và gửi nó lên blockchain.
 
-### 3. [Tạo Native Assets](./01-mint-native-assets.md)
+### 3. [Tạo Native Assets](./lab03.md)
 
 Bài lab sẽ giải thích cách đúc tài sản gốc tùy chỉnh và chuyển những tài sản đó sang các địa chỉ khác.
+
+### 4. [Tạo NFT](./lab04.md)
+
+Bài lab sẽ giải thích cách đúc NFT của riêng mình và chuyển NFT đó sang các địa chỉ khác.
