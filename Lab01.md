@@ -120,6 +120,7 @@ cardano-cli stake-address build --testnet-magic 2 \
 Chúng ta cũng muốn kiểm tra xem Node của chúng ta có được cập nhật hay không. Để làm điều đó, chúng ta kiểm tra kỷ nguyên / khối hiện tại và so sánh nó với giá trị hiện tại được hiển thị trong [Cardano Explorer for the testnet](https://explorer.cardano-testnet.iohkdev.io/en).
 
 ```bash
+testnet="--testnet-magic 2"
 cardano-cli query tip $testnet
 ```
 
