@@ -36,7 +36,7 @@ UTXO_IN=b8c108bde14a183b79d00a48108c40808f46757ddfd16cdbf797fc0ebecd8047#0
 ### B1. Xây dựng giao dịch (Build Tx)
 
 ```bash
-cardano-cli transaction build $testnet \
+cardano-cli conway transaction build $testnet \
 --tx-in $UTXO_IN \
 --tx-out $BOB_ADDR+$LOVELACE_VALUE \
 --change-address $address \
