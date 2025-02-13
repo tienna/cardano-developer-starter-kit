@@ -8,7 +8,7 @@
     "source=${localWorkspaceFolder},target=/workspaces,type=bind"
   ],
   "postCreateCommand": 
-	"chmod u+x ./mithril.sh",	
+	"chmod u+x ./mithril.sh; ./mithril.sh ",	
   "runArgs": [
     "--env", "NETWORK=preview",
     "--publish", "3001:3001",
