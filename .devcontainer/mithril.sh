@@ -10,4 +10,4 @@ if [ ! -d "$DIR" ]; then
 else 
   echo "Dữ liệu của Blockchain Cardano đã tồn tại"
 fi
-nohup bash -c 'cardano-node run --config /opt/cardano/config/preview/config.json --database-path "$(pwd)/data/testnet/$SNAPSHOT_DIGEST/db" --socket-path /opt/cardano/config/preview/db/node.socket --host-addr 0.0.0.0 --port 3001 --topology /opt/cardano/config/preview/topology.json '>/dev/null 2>&1
+nohup bash -c 'cardano-node run --config /opt/cardano/config/preview/config.json --database-path "$(pwd)/data/testnet/$SNAPSHOT_DIGEST/db" --socket-path /opt/cardano/config/preview/db/node.socket --host-addr 0.0.0.0 --port 3001 --topology /opt/cardano/config/preview/topology.json ' >/dev/null 2>&1 &
