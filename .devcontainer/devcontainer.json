@@ -1,5 +1,5 @@
 {
-  "name": "Cardano CLI Devcontainer",
+  "name": "Cardano Dev Container",
   "image": "ghcr.io/blinklabs-io/cardano-node:latest",
   "features": {
     "docker-in-docker": "latest"
