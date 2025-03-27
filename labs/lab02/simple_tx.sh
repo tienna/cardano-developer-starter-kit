@@ -5,10 +5,9 @@ address_skey="payment.skey"
 cardano-cli query utxo $testnet --address $address
 
 #chỉnh sửa lại giá trị các biến
-BOB_ADDR="addr_test1qz8shh6wqssr83hurdmqx44js8v7tglg9lm3xh89auw007dd38kf3ymx9c2w225uc7yjmplr794wvc96n5lsy0wsm8fq9n5epq"
-VALUE=1000000
-
-UTXO_IN=cccfd8642e237ea1d7465a42d3851d1a7902ba9abb9fab46b1b12b69df02ef4b#2
+BOB_ADDR="addr_test1qrjgrt0eqjlrn3wkd6m6rpllkzjff0xldchhl8jzwx430tkf4wx2mtkjxk0cqxgsh0t9rrfapzzgs0l4mlvh4uwsqvys3upzzm"
+VALUE=100000000
+UTXO_IN=e909828f5201633151b882fde26c484cc81f0264ec58323c55783ebe1ed9a73d#0
 
 # B1. Xây dựng giao dịch (Build Tx)
 
@@ -17,17 +16,18 @@ cardano-cli conway transaction build $testnet \
 --tx-in $UTXO_IN \
 --tx-out $BOB_ADDR+$VALUE \
 --change-address $address \
---out-file simple-tx.raw
+--out-file tx1.raw
+
 
 # B2. Ký giao dịch (Sign Tx)
 
 cardano-cli conway transaction sign $testnet \
 --signing-key-file $address_skey \
---tx-body-file simple-tx.raw \
---out-file simple-tx.signed
+--tx-body-file tx1.raw \
+--out-file tx1.signed
 
 # B3. Gửi giao dịch (Submit Tx)
 
 cardano-cli conway transaction submit $testnet \
---tx-file simple-tx.signed
+--tx-file tx1.signed
 

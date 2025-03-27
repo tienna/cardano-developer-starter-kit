@@ -1,0 +1,34 @@
+services:
+  cardano-node:
+    image: ghcr.io/intersectmbo/cardano-node:${CARDANO_NODE_VERSION:-latest}
+    environment:
+      - NETWORK=${NETWORK:-mainnet}
+    volumes:
+      - node-db:/data/db
+      - node-ipc:/ipc
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+
+  cardano-submit-api:
+    image: ghcr.io/intersectmbo/cardano-submit-api:${CARDANO_SUBMIT_API_VERSION:-latest}
+    environment:
+      - NETWORK=${NETWORK:-mainnet}
+    depends_on:
+      - cardano-node
+    volumes:
+      - node-ipc:/ipc
+    ports:
+      - 8090:8090
+    restart: on-failure
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+
+volumes:
+  node-db:
+  node-ipc:

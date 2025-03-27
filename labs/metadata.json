@@ -1,0 +1,12 @@
+{
+  "721": {
+    "8365c380da1dacf1f4b6292111b48443cc0edfd948457ac4ec7d66c5": {
+      "MovieTicket": {
+        "description": "Vé xem phim",
+        "name": "Movie-Ticket",
+        "id": "1",
+        "image": "ipfs://QmTyy1vz9pkhuTvRSXxSCuxJXVofScyG1PHLttFbCxryNn"
+      }
+    }
+  }
+}
