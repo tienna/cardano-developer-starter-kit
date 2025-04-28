@@ -1,7 +1,4 @@
 #! /bin/bash
-set -euo pipefail
-
-apt-get update
-apt-get install unzip -y
-curl -fsSL https://deno.land/install.sh | sh
+root@codespaces-a48a05:/workspaces/cardano-developer-starter-kit# demo run --allow-all ./lucid1.ts
+bash: demo: command not found
 
