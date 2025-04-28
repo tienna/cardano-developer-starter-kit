@@ -25,7 +25,7 @@ cardano-cli key verification-key --signing-key-file stake.skey \
 # cardano-address key hash < stake.xvk > stake.vkh
 # cardano-address address delegation $(cat stake.vkh) < payment.addr > base.addr
 
-cardano-cli address build --testnet-magic 2 \
+cardano-cli conway address build --testnet-magic 2 \
                           --payment-verification-key-file payment.xvk \
                           --stake-verification-key-file stake.xvk \
                           --out-file base.addr
